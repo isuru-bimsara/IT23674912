@@ -10,7 +10,7 @@ async function getSinhalaTranslation(page, singlishText) {
   // Enter Singlish input
   await page.fill(INPUT, singlishText);
 
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(6000);
 
   const fullText = await page.textContent("body");
 
