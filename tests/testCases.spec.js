@@ -425,13 +425,14 @@ test("Test 35 : Convert the sentence with towns' names", async ({ page }) => {
   expect(actual).toBe(expected);
 });
 
-test("Test 36 : The system makes it easy to find Singlish letters for Sinhala.", async ({ page }) => {
+test("Test 36 : The system makes it easy to find Singlish letters for Sinhala.", async ({
+  page,
+}) => {
   const singlish = `graahakayaa mee mohethee sambandha kara nohaeka`;
   const expected = `ග්‍රාහකයා මේ මොහෙතේ සම්බන්ද කර නොහැක`;
 
   const actual = await getSinhalaTranslation(page, singlish);
-  checkResult(actual, expected, "Test 35");
+  checkResult(actual, expected, "Test 36");
 
   expect(actual).toBe(expected);
 });
-
